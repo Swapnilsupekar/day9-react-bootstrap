@@ -2,14 +2,14 @@ import "./App.css";
 
 function App() {
   let list = [
-    "Mumbai",
-    "Delhi",
-    "Kolkata",
-    "Chennai",
-    "Mumbai",
-    "Delhi",
-    "Kolkata",
-    "Chennai",
+    "https://picsum.photos/300/301",
+    "https://picsum.photos/300/302",
+    "https://picsum.photos/300/303",
+    "https://picsum.photos/300/304",
+    "https://picsum.photos/300/305",
+    "https://picsum.photos/300/306",
+    "https://picsum.photos/300/307",
+    "https://picsum.photos/300/308",
   ];
 
   return (
@@ -23,9 +23,16 @@ function App() {
             <div
               key={index}
               className="d-flex justify-content-center align-items-center text-light mb-2 bg-secondary"
-              style={{ height: "150px", fontSize: "2rem" }}
+              style={{ height: "250px", fontSize: "2rem" }}
             >
-              {item}
+              <img
+                src={item}
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  objectFit: "cover",
+                }}
+              />
             </div>
           ))}
         </div>
